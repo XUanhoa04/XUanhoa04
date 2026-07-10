@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Hi%20there,%20I'm%20Cái%20Xuân%20Hòa!%20%F0%9F%91%8B&fontSize=40&fontAlignY=35&animation=twinkling&desc=AI%20Engineer%20%7C%20Cloud%20%26%20DevOps%20Enthusiast&descAlignY=55&descAlign=50" alt="Header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Hi%20there,%20I'm%20Cái%20Xuân%20Hòa!%20%F0%9F%91%8B&fontSize=40&fontAlignY=35&animation=twinkling&desc=AI%20Engineer%20%7C%20Cloud%20and%20DevOps%20Enthusiast&descAlignY=55&descAlign=50" alt="Header" />
 </div>
 
 <p align="center">
@@ -7,7 +7,7 @@
 </p>
 
 <div align="center">
-  <img src="https://profile-counter.glitch.me/XUanhoa04/count.svg" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=XUanhoa04&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
 </div>
 
 ---
