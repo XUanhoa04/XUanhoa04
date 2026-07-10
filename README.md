@@ -19,7 +19,7 @@
 - 🌱 Hiện tại mình đang tập trung nghiên cứu chuyên sâu và mở rộng kiến thức về **Cloud, DevOps, và AIOps**.
 - 👯 Rất sẵn lòng hợp tác trong các dự án về **Machine Learning, Data Engineering, MLOps**.
 - 💬 Hãy hỏi mình bất cứ điều gì về **Python, Linux, AWS, Docker và AI**.
-- 📫 Liên hệ với mình qua: [LinkedIn của bạn](#) / [Email của bạn](#) *(Thay bằng link của bạn nhé!)*
+- 📫 Liên hệ với mình qua: [LinkedIn](https://www.linkedin.com/in/xuan-hoa-04655931a/) / [Email](mailto:xuanhoa2004tt@gmail.com)
 
 ---
 
@@ -27,29 +27,16 @@
 
 <div align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=py,linux,aws,docker,pytorch,jupyter,git,bash&perline=8" />
+    <img src="https://skillicons.dev/icons?i=py,linux,aws,docker,pytorch,git,bash&perline=7" />
   </a>
 </div>
-
----
-
-## 🏆 Thành tích GitHub (Trophies)
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=XUanhoa04&theme=radical&no-frame=true&no-bg=true" alt="Trophies" />
-</p>
 
 ---
 
 ## 📊 Thống kê GitHub (GitHub Stats)
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=XUanhoa04&show_icons=true&theme=radical&hide_border=true" height="150" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=XUanhoa04&theme=radical&hide_border=true" height="150" alt="GitHub Streak" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=XUanhoa04&layout=compact&theme=radical&hide_border=true" alt="Top Langs" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=XUanhoa04&theme=radical&hide_border=true" alt="GitHub Streak" />
 </p>
 
 ---
