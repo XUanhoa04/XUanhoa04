@@ -17,8 +17,9 @@
 ## 👨‍💻 Vài nét về mình (About Me)
 - 🔭 Mình là một **AI Engineer** với đam mê xây dựng các hệ thống và giải pháp trí tuệ nhân tạo.
 - 🌱 Hiện tại mình đang tập trung nghiên cứu chuyên sâu và mở rộng kiến thức về **Cloud, DevOps, và AIOps**.
-- 👯 Rất sẵn lòng hợp tác trong các dự án về **AI, Data Engineering, MLOps**.
-- 📫 Liên hệ với mình qua: [https://www.linkedin.com/in/xuan-hoa-04655931a/](#) / [xuanhoa2004tt@gmail.com](#)
+- 👯 Rất sẵn lòng hợp tác trong các dự án về **Machine Learning, Data Engineering, MLOps**.
+- 💬 Hãy hỏi mình bất cứ điều gì về **Python, Linux, AWS, Docker và AI**.
+- 📫 Liên hệ với mình qua: [LinkedIn của bạn](#) / [Email của bạn](#) *(Thay bằng link của bạn nhé!)*
 
 ---
 
@@ -26,7 +27,7 @@
 
 <div align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=py,linux,aws,docker,tensorflow,pytorch,jupyter,bash,git,kubernetes,githubactions,fastapi,mysql,postgres&perline=7" />
+    <img src="https://skillicons.dev/icons?i=py,linux,aws,docker,pytorch,jupyter,git,bash&perline=8" />
   </a>
 </div>
 
@@ -34,22 +35,22 @@
 
 ## 🏆 Thành tích GitHub (Trophies)
 
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=XUanhoa04&theme=radical&column=7&no-frame=true&no-bg=true&margin-w=15" />
-</div>
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=XUanhoa04&theme=radical&no-frame=true&no-bg=true" alt="Trophies" />
+</p>
 
 ---
 
 ## 📊 Thống kê GitHub (GitHub Stats)
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=XUanhoa04&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=XUanhoa04&theme=radical&hide_border=true&background=0D1117" width="48%" />
-</div>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=XUanhoa04&show_icons=true&theme=radical&hide_border=true" height="150" alt="GitHub Stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=XUanhoa04&theme=radical&hide_border=true" height="150" alt="GitHub Streak" />
+</p>
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=XUanhoa04&layout=compact&theme=radical&hide_border=true&bg_color=0D1117" />
-</div>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=XUanhoa04&layout=compact&theme=radical&hide_border=true" alt="Top Langs" />
+</p>
 
 ---
 
