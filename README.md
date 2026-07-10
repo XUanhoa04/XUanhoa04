@@ -12,16 +12,15 @@
 
 ---
 
-## 👨‍💻 Vài nét về mình (About Me)
-- 🔭 Mình là một **AI Engineer** với đam mê xây dựng các hệ thống và giải pháp trí tuệ nhân tạo.
-- 🌱 Hiện tại mình đang tập trung nghiên cứu chuyên sâu và mở rộng kiến thức về **Cloud, DevOps, và AIOps**.
-- 👯 Rất sẵn lòng hợp tác trong các dự án về **Machine Learning, Data Engineering, MLOps**.
-- 💬 Hãy hỏi mình bất cứ điều gì về **Python, Linux, AWS, Docker và AI**.
-- 📫 Liên hệ với mình qua: [LinkedIn](https://www.linkedin.com/in/xuan-hoa-04655931a/) / [Email](mailto:xuanhoa2004tt@gmail.com)
+## 👨‍💻 About Me
+- 🔭 I’m an **AI Engineer** passionate about building artificial intelligence systems and solutions.
+- 🌱 I’m currently focused on deep research and expanding my knowledge in **Cloud, DevOps, and AIOps**.
+- 👯 I’m open to collaborating on projects related to **AI, Data Engineering, and MLOps**.
+- 📫 How to reach me: [LinkedIn](https://www.linkedin.com/in/xuan-hoa-04655931a/) / [Email](mailto:xuanhoa2004tt@gmail.com)
 
 ---
 
-## 🛠️ Kỹ năng & Công cụ (Tech Stack)
+## 🛠️ Tech Stack & Tools
 
 <div align="center">
   <a href="https://skillicons.dev">
@@ -31,7 +30,7 @@
 
 ---
 
-## 📊 Thống kê GitHub (GitHub Stats)
+## 📊 GitHub Stats
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=XUanhoa04&theme=radical&hide_border=true" alt="GitHub Streak" />
