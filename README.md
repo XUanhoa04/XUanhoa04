@@ -1,43 +1,56 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=Hi%20there,%20I'm%20Cái%20Xuân%20Hòa!%20%F0%9F%91%8B&fontSize=40&fontAlignY=35&animation=twinkling&desc=AI%20Engineer%20%7C%20Cloud%20and%20DevOps%20Enthusiast&descAlignY=55&descAlign=50" alt="Header" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=280&section=header&text=Hi%20there,%20I'm%20Cái%20Xuân%20Hòa!%20👋&fontSize=45&fontAlignY=38&animation=twinkling&desc=AI%20Engineer%20%7C%20Cloud%20%26%20DevOps%20Enthusiast&descAlignY=58&descAlign=50" alt="Header" />
 </div>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=00BFFF&center=true&vCenter=true&width=600&lines=AI+Engineer+and+Machine+Learning;Exploring+Cloud+and+DevOps;Building+Intelligent+Systems" alt="Typing SVG" />
+  <a href="https://github.com/XUanhoa04">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1200&color=00BFFF&center=true&vCenter=true&width=700&lines=Building+Intelligent+Systems;AI+%2B+Cloud+%2B+DevOps;Turning+ideas+into+reality" alt="Typing SVG" />
+  </a>
 </p>
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=XUanhoa04&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=XUanhoa04&label=Profile%20Views&color=0e75b6&style=for-the-badge" alt="Profile Views" />
 </div>
 
 ---
 
 ## 👨‍💻 About Me
-- 🔭 I’m an **AI Engineer** passionate about building artificial intelligence systems and solutions.
-- 🌱 I’m currently focused on deep research and expanding my knowledge in **Cloud, DevOps, and AIOps**.
-- 👯 I’m open to collaborating on projects related to **AI, Data Engineering, and MLOps**.
-- 📫 How to reach me: [LinkedIn](https://www.linkedin.com/in/xuan-hoa-04655931a/) / [Email](mailto:xuanhoa2004tt@gmail.com)
+
+- 🔭 **AI Engineer** — Đang tập trung xây dựng các hệ thống AI & MLOps
+- 🌱 Học sâu hơn về **Cloud (AWS)**, **DevOps**, **Kubernetes** và **AIOps**
+- 👯 Mở cho collab trên dự án **AI**, **Data Engineering**, **Automation**
+- 📫 Liên hệ: [LinkedIn](https://www.linkedin.com/in/xuan-hoa-04655931a/) | [Email](mailto:xuanhoa2004tt@gmail.com)
 
 ---
 
-## 🛠️ Tech Stack & Tools
+## 🛠️ Tech Stack
 
 <div align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=py,linux,aws,docker,pytorch,git,bash&perline=7" alt="Tech Stack" />
-  </a>
+  <img src="https://skillicons.dev/icons?i=python,typescript,aws,docker,kubernetes,linux,git,github,fastapi,pytorch,tensorflow,postgres,redis,bash&perline=8" alt="Tech Stack" />
 </div>
 
 ---
 
 ## 📊 GitHub Stats
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=XUanhoa04&theme=radical&hide_border=true" alt="GitHub Streak" />
-</p>
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=XUanhoa04&theme=tokyonight&hide_border=true&border_radius=12" alt="Streak" />
+  
+  <img src="https://github-readme-stats.vercel.app/api?username=XUanhoa04&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12" alt="Stats" />
+  
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=XUanhoa04&layout=compact&theme=tokyonight&hide_border=true&border_radius=12" alt="Top Languages" />
+</div>
+
+---
+
+## 🏆 Trophies & Achievements
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=XUanhoa04&theme=tokyonight&column=4&margin-w=15&margin-h=15&no-bg=true" alt="Trophies" />
+</div>
 
 ---
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" alt="Footer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=footer" alt="Footer" />
 </div>
