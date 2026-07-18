@@ -14,7 +14,7 @@
   Building **explainable** reliability systems — detect → decide → RCA → remediate → learn.
 
   [![GitHub followers](https://img.shields.io/github/followers/XUanhoa04?style=for-the-badge&logo=github&logoColor=white&label=Follow)](https://github.com/XUanhoa04)
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/xuan-hoa-04655931a/)
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/c%C3%A1i-xu%C3%A2n-h%C3%B2a-04655931a/)
   [![Email](https://img.shields.io/badge/Email-xuanhoa2004tt%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:xuanhoa2004tt@gmail.com)
   [![Location](https://img.shields.io/badge/Based_in-Vietnam-DA020E?style=for-the-badge&logo=googlemaps&logoColor=white)](https://github.com/XUanhoa04)
 
@@ -125,7 +125,7 @@ I care about systems that **fail safely** and **explain themselves** to on-call 
 | | |
 |--|--|
 | **GitHub** | [github.com/XUanhoa04](https://github.com/XUanhoa04) |
-| **LinkedIn** | [xuan-hoa-04655931a](https://www.linkedin.com/in/xuan-hoa-04655931a/) |
+| **LinkedIn** | [Cái Xuân Hòa](https://www.linkedin.com/in/c%C3%A1i-xu%C3%A2n-h%C3%B2a-04655931a/) |
 | **Email** | [xuanhoa2004tt@gmail.com](mailto:xuanhoa2004tt@gmail.com) |
 
 ---
