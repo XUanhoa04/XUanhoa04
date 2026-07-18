@@ -32,11 +32,9 @@
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=XUanhoa04&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12&include_all_commits=true" alt="Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=XUanhoa04&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12" alt="GitHub Stats" />
   
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=XUanhoa04&theme=tokyonight&hide_border=true&border_radius=12" alt="Streak" />
-  
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=XUanhoa04&layout=compact&theme=tokyonight&hide_border=true&border_radius=12" alt="Top Languages" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=XUanhoa04&theme=tokyonight&hide_border=true&border_radius=12" alt="Streak Stats" />
 </div>
 
 ---
@@ -44,7 +42,7 @@
 ## 🏆 Trophies & Achievements
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=XUanhoa04&theme=tokyonight&column=4&margin-w=15&margin-h=15&no-bg=true&title=Stars,Followers,Repositories,Commits,Contributions" alt="Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=XUanhoa04&theme=tokyonight&column=4&margin-w=15&margin-h=15&no-bg=true" alt="Trophies" />
 </div>
 
 ---
