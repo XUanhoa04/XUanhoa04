@@ -9,9 +9,7 @@
 
   # Hi, I'm **Xuân Hòa**
 
-  ### SRE · AIOps · Cloud Platform
-
-  Building **explainable** reliability systems — detect → decide → RCA → remediate → learn.
+  ### AI/AIOps Engineer
 
   [![GitHub followers](https://img.shields.io/github/followers/XUanhoa04?style=for-the-badge&logo=github&logoColor=white&label=Follow)](https://github.com/XUanhoa04)
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/c%C3%A1i-xu%C3%A2n-h%C3%B2a-04655931a/)
