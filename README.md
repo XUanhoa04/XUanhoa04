@@ -41,6 +41,7 @@ I care about systems that **fail safely** and **explain themselves** to on-call 
       </h3>
       <p>
         Explainable <strong>AIOps closed loop</strong>:<br/>
+        
         hybrid anomaly detection · multi-signal confidence · decision engine ·
         topology-aware RCA (Amazon Bedrock + rule fallback) · risk-gated remediation ·
         Engine QA / offline eval + CI.
@@ -61,7 +62,7 @@ I care about systems that **fail safely** and **explain themselves** to on-call 
 </table>
 
 <details>
-  <summary><strong>Why this project (interview talking points)</strong></summary>
+  <summary><strong>Why this project</strong></summary>
   <br/>
 
   | Theme | Implementation |
