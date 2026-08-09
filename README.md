@@ -12,7 +12,7 @@
 
 ## About me
 
-Hi, I'm **Cái Xuân Hòa**, an **AI Engineer** from Vietnam.
+Hi, I'm **Cái Xuân Hòa**, an Intern **AI Engineer** from Vietnam.
 
 I previously interned at **XBrain** through the **AWS Accelerator Internship Program**, where I gained hands-on experience with AI and cloud technologies. I am currently learning more about **AIOps, Cloud, and LLMOps**, with an interest in building useful, reliable systems one step at a time.
 
