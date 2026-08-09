@@ -18,7 +18,7 @@ I previously interned at **XBrain** through the **AWS Accelerator Internship Pro
 
 ## Tech stack
 
-**Languages:** `Python` · `TypeScript` · `Go` · `Bash`
+**Languages:** `Python` · `TypeScript` · `Bash`
 
 **AI & data:** `PyTorch` · `scikit-learn` · `FastAPI` · `Amazon Bedrock` · `PostgreSQL` · `Redis`
 
