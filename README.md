@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="./assets/aiops-console.svg" width="92%" alt="Cái Xuân Hòa — AI Engineer" />
+  <img src="./assets/aiops-console.svg" width="100%" alt="Cái Xuân Hòa — AI Engineer learning AIOps, Cloud and LLMOps" />
 
   <br/>
 
@@ -30,24 +30,22 @@ I previously interned at **XBrain** through the **AWS Accelerator Internship Pro
 
 <div align="center">
 
-  <img width="49%" src="https://streak-stats.demolab.com?user=XUanhoa04&theme=transparent&hide_border=true&stroke=6E7681&ring=58A6FF&fire=F0883E&currStreakNum=8B949E&sideNums=8B949E&currStreakLabel=58A6FF&sideLabels=6E7681&dates=6E7681" alt="GitHub streak and total contributions" />
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=XUanhoa04&theme=github_dark" alt="Most-used languages by commits" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=XUanhoa04&theme=github_dark&animation=load&duration=2" alt="Xuân Hòa's GitHub statistics" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=XUanhoa04&theme=github_dark&animation=load&duration=2" alt="Most-used languages by commits" />
 
-</div>
-
-<details>
-  <summary><strong>More contribution activity</strong></summary>
   <br/>
 
-  <div align="center">
-    <img width="98%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=XUanhoa04&theme=github_dark" alt="GitHub contribution timeline" />
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/XUanhoa04/XUanhoa04/output/github-contribution-grid-snake-dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/XUanhoa04/XUanhoa04/output/github-contribution-grid-snake.svg" />
-      <img width="98%" alt="Contribution snake" src="https://raw.githubusercontent.com/XUanhoa04/XUanhoa04/output/github-contribution-grid-snake.svg" />
-    </picture>
-  </div>
-</details>
+  <img width="58%" src="https://streak-stats.demolab.com?user=XUanhoa04&theme=github-dark-blue&hide_border=true&ring=58A6FF&fire=F0883E&currStreakLabel=58A6FF" alt="GitHub streak and total contributions" />
+
+  <br/>
+
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/XUanhoa04/XUanhoa04/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/XUanhoa04/XUanhoa04/output/github-contribution-grid-snake.svg" />
+    <img width="96%" alt="Contribution snake" src="https://raw.githubusercontent.com/XUanhoa04/XUanhoa04/output/github-contribution-grid-snake.svg" />
+  </picture>
+
+</div>
 
 <div align="center">
   <sub>Thanks for stopping by.</sub>
