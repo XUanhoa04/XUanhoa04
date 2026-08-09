@@ -1,141 +1,66 @@
-<!--
-  GitHub Profile README for https://github.com/XUanhoa04
-  Images: only shields.io + github.com / opengraph.githubassets.com (stable)
--->
+<!-- Minimal, telemetry-first profile. Dynamic cards show public GitHub data. -->
 
 <div align="center">
 
-  <img src="https://github.com/XUanhoa04.png" width="110" height="110" alt="Xuan Hoa avatar" />
+  <img src="./assets/aiops-console.svg" width="100%" alt="Animated AI and AIOps console for Xuan Hoa" />
 
-  # Hi, I'm **Xuân Hòa**
+  <br/>
 
-  ### AI/AIOps Engineer
+  [![AI/AIOps Engineer](https://img.shields.io/badge/AI%20%2F%20AIOps-ENGINEER-7C3AED?style=for-the-badge&labelColor=0D1117)](https://github.com/XUanhoa04)
+  [![Vietnam](https://img.shields.io/badge/VIETNAM-UTC%2B7-00C2FF?style=for-the-badge&labelColor=0D1117)](https://github.com/XUanhoa04)
+  [![Profile views](https://komarev.com/ghpvc/?username=XUanhoa04&label=PROFILE%20SIGNAL&color=FF4D8D&style=for-the-badge)](https://github.com/XUanhoa04)
 
-  [![GitHub followers](https://img.shields.io/github/followers/XUanhoa04?style=for-the-badge&logo=github&logoColor=white&label=Follow)](https://github.com/XUanhoa04)
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/c%C3%A1i-xu%C3%A2n-h%C3%B2a-04655931a/)
-  [![Email](https://img.shields.io/badge/Email-xuanhoa2004tt%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:xuanhoa2004tt@gmail.com)
-  [![Location](https://img.shields.io/badge/Based_in-Vietnam-DA020E?style=for-the-badge&logo=googlemaps&logoColor=white)](https://github.com/XUanhoa04)
+  <br/>
+
+  <code>OBSERVABILITY</code> × <code>INTELLIGENT SYSTEMS</code> × <code>AUTOMATION</code>
 
 </div>
 
----
-
-## About
-
-I care about systems that **fail safely** and **explain themselves** to on-call engineers.
-
-- Currently learning: **AIOps**, **MLOps**, **Cloud (AWS)**  
-- Approach: closed-loop automation with **human gates** on high-risk actions  
-- Portfolio: **SentinelLoop** — production-*like* AIOps stack with topology-aware RCA and CI evaluation  
-
----
-
-## Featured project
-
-<table>
-  <tr>
-    <td width="70%">
-      <h3>
-        <a href="https://github.com/XUanhoa04/aiops-demo-bedrock">SentinelLoop</a>
-        · <code>aiops-demo-bedrock</code>
-      </h3>
-      <p>
-        Explainable <strong>AIOps closed loop</strong>:<br/>
-        
-        hybrid anomaly detection · multi-signal confidence · decision engine ·
-        topology-aware RCA (Amazon Bedrock + rule fallback) · risk-gated remediation ·
-        Engine QA / offline eval + CI.
-      </p>
-      <p>
-        <a href="https://github.com/XUanhoa04/aiops-demo-bedrock"><img src="https://img.shields.io/github/stars/XUanhoa04/aiops-demo-bedrock?style=flat-square&logo=github&label=stars" alt="stars" /></a>
-        <a href="https://github.com/XUanhoa04/aiops-demo-bedrock"><img src="https://img.shields.io/github/last-commit/XUanhoa04/aiops-demo-bedrock?style=flat-square&logo=git&label=last%20commit" alt="last commit" /></a>
-        <a href="https://github.com/XUanhoa04/aiops-demo-bedrock/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/XUanhoa04/aiops-demo-bedrock/ci.yml?branch=main&style=flat-square&logo=githubactions&label=CI" alt="CI" /></a>
-        <img src="https://img.shields.io/badge/stack-Python%20%7C%20FastAPI%20%7C%20Docker-3776AB?style=flat-square&logo=python&logoColor=white" alt="stack" />
-      </p>
-    </td>
-    <td width="30%" align="center">
-      <a href="https://github.com/XUanhoa04/aiops-demo-bedrock">
-        <img src="https://opengraph.githubassets.com/1/XUanhoa04/aiops-demo-bedrock" alt="SentinelLoop repository preview" width="100%" />
-      </a>
-    </td>
-  </tr>
-</table>
-
-<details>
-  <summary><strong>Why this project</strong></summary>
-  <br/>
-
-  | Theme | Implementation |
-  |-------|----------------|
-  | Safety | High-risk remediations need approval; LLM falls back to rules |
-  | Explainability | EWMA / σ narratives, not black-box scores alone |
-  | Grounded GenAI | RCA only reasons over Prom / Loki / Tempo + topology |
-  | Measurable quality | Offline anomaly F1 + RCA accuracy vs naive baselines in CI |
-
-</details>
-
----
-
-## Tech stack
-
-> Badges via [shields.io](https://shields.io) only — no third-party stats CDNs.
-
-### Languages & frameworks
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
-
-### Cloud · DevOps · Observability
-
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
-![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-000000?style=for-the-badge&logo=opentelemetry&logoColor=white)
-
-### Data · AI · Messaging
-
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![Amazon Bedrock](https://img.shields.io/badge/Amazon_Bedrock-FF9900?style=for-the-badge&logo=amazonwebservices&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![scikit--learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-
----
-
-## What I'm focusing on
-
-Currently **learning**:
-
-```text
-→ AIOps
-→ MLOps
-→ Cloud (AWS)
-```
-
-Hands-on: [SentinelLoop](https://github.com/XUanhoa04/aiops-demo-bedrock)
-
----
-
-## Connect
-
-| | |
-|--|--|
-| **GitHub** | [github.com/XUanhoa04](https://github.com/XUanhoa04) |
-| **LinkedIn** | [Cái Xuân Hòa](https://www.linkedin.com/in/c%C3%A1i-xu%C3%A2n-h%C3%B2a-04655931a/) |
-| **Email** | [xuanhoa2004tt@gmail.com](mailto:xuanhoa2004tt@gmail.com) |
-
----
+<br/>
 
 <div align="center">
 
-  **Thanks for visiting** — feel free to star [SentinelLoop](https://github.com/XUanhoa04/aiops-demo-bedrock).
+### `// LIVE TELEMETRY`
 
-  <img src="https://img.shields.io/badge/Learning-AIOps%20%7C%20MLOps%20%7C%20Cloud-58A6FF?style=for-the-badge" alt="Learning AIOps MLOps Cloud" />
+  <img width="68%" src="https://streak-stats.demolab.com?user=XUanhoa04&theme=transparent&hide_border=true&border_radius=12&stroke=7C3AED&ring=00C2FF&fire=FF4D8D&currStreakNum=FFFFFF&sideNums=C9D1D9&currStreakLabel=00C2FF&sideLabels=8B949E&dates=6E7681" alt="GitHub daily contribution streak" />
+
+  <br/>
+
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=XUanhoa04&theme=github_dark&animation=load&duration=2" alt="Total GitHub contribution statistics" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=XUanhoa04&theme=github_dark&animation=load&duration=2" alt="Most-used languages by commits" />
+
+  <br/>
+
+  <img width="99%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=XUanhoa04&theme=github_dark&animation=rgb-soft&duration=8" alt="GitHub contribution timeline" />
+
+</div>
+
+<br/>
+
+<div align="center">
+
+### `// CONTRIBUTION FLOW`
+
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/XUanhoa04/XUanhoa04/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/XUanhoa04/XUanhoa04/output/github-contribution-grid-snake.svg" />
+    <img width="100%" alt="Animated contribution snake" src="https://raw.githubusercontent.com/XUanhoa04/XUanhoa04/output/github-contribution-grid-snake.svg" />
+  </picture>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+### `// OPEN CHANNEL`
+
+  [![GitHub](https://img.shields.io/badge/GitHub-XUanhoa04-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/XUanhoa04)
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Xuân%20Hòa-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/c%C3%A1i-xu%C3%A2n-h%C3%B2a-04655931a/)
+  [![Email](https://img.shields.io/badge/Email-SAY%20HELLO-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:xuanhoa2004tt@gmail.com)
+
+  <br/><br/>
+
+  <sub><code>STATUS: ONLINE</code> · building systems that observe, reason, and act.</sub>
 
 </div>

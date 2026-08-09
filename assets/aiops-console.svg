@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-labelledby="title desc">
+  <title id="title">Xuan Hoa — AI and AIOps Engineer</title>
+  <desc id="desc">An animated neon operations console with pulsing AI nodes and moving telemetry.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070B14"/>
+      <stop offset="0.52" stop-color="#0D1117"/>
+      <stop offset="1" stop-color="#120B25"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00E5FF"/>
+      <stop offset="0.52" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#FF4D8D"/>
+    </linearGradient>
+    <radialGradient id="core">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="0.22" stop-color="#00E5FF" stop-opacity="0.9"/>
+      <stop offset="0.64" stop-color="#7C3AED" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#7C3AED" stroke-opacity="0.10" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="frame"><rect x="12" y="12" width="1176" height="356" rx="24"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="380" rx="28" fill="url(#bg)"/>
+  <rect x="12" y="12" width="1176" height="356" rx="24" fill="url(#grid)" stroke="url(#neon)" stroke-width="1.5" stroke-opacity="0.72"/>
+
+  <g clip-path="url(#frame)">
+    <rect x="0" y="-80" width="1200" height="70" fill="url(#neon)" opacity="0.05">
+      <animate attributeName="y" values="-80;390" dur="5.5s" repeatCount="indefinite"/>
+    </rect>
+    <path d="M0 310 C180 260 290 360 480 305 S800 245 1200 315" fill="none" stroke="#00E5FF" stroke-opacity="0.16" stroke-width="2" stroke-dasharray="8 12">
+      <animate attributeName="stroke-dashoffset" values="0;-200" dur="8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <circle cx="54" cy="51" r="6" fill="#3FB950">
+      <animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="72" y="57" fill="#8B949E" font-size="16" letter-spacing="2">XUANHOA04 / OPS CONSOLE</text>
+    <text x="1085" y="57" fill="#3FB950" font-size="14" text-anchor="end">ONLINE</text>
+
+    <text x="66" y="155" fill="#F0F6FC" font-size="74" font-weight="800" letter-spacing="-3">AI / AIOPS</text>
+    <text x="70" y="217" fill="url(#neon)" font-size="52" font-weight="700" letter-spacing="10" filter="url(#glow)">ENGINEER</text>
+    <text x="72" y="273" fill="#8B949E" font-size="18" letter-spacing="3">OBSERVE  →  REASON  →  AUTOMATE</text>
+
+    <text x="72" y="326" fill="#00E5FF" font-size="14">$ system.identity --resolve</text>
+    <rect x="365" y="313" width="10" height="18" rx="1" fill="#FF4D8D">
+      <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g transform="translate(930 190)">
+    <circle r="116" fill="none" stroke="#7C3AED" stroke-opacity="0.14" stroke-width="1" stroke-dasharray="4 12">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="32s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="83" fill="none" stroke="#00E5FF" stroke-opacity="0.23" stroke-width="1" stroke-dasharray="3 9">
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="18s" repeatCount="indefinite"/>
+    </circle>
+
+    <g fill="none" stroke="url(#neon)" stroke-width="2" stroke-opacity="0.62" stroke-dasharray="6 8">
+      <path d="M0 0L-91-52L-70 77L45 98L96 22L63-72Z">
+        <animate attributeName="stroke-dashoffset" values="0;-84" dur="4s" repeatCount="indefinite"/>
+      </path>
+      <path d="M-91-52L63-72M-70 77L96 22M45 98L0 0" opacity="0.55">
+        <animate attributeName="stroke-dashoffset" values="0;70" dur="3s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <circle r="48" fill="url(#core)" filter="url(#glow)">
+      <animate attributeName="r" values="42;51;42" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="23" fill="#0D1117" stroke="#00E5FF" stroke-width="2"/>
+    <path d="M-10 2L-3 9L12-9" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g filter="url(#glow)">
+      <circle cx="-91" cy="-52" r="8" fill="#00E5FF"><animate attributeName="r" values="7;11;7" dur="2.7s" repeatCount="indefinite"/></circle>
+      <circle cx="-70" cy="77" r="8" fill="#7C3AED"><animate attributeName="r" values="8;12;8" dur="3.1s" repeatCount="indefinite"/></circle>
+      <circle cx="45" cy="98" r="8" fill="#FF4D8D"><animate attributeName="r" values="7;10;7" dur="2.2s" repeatCount="indefinite"/></circle>
+      <circle cx="96" cy="22" r="8" fill="#00E5FF"><animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/></circle>
+      <circle cx="63" cy="-72" r="8" fill="#FF4D8D"><animate attributeName="opacity" values="0.35;1;0.35" dur="1.9s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <circle r="4" fill="#FFFFFF" filter="url(#glow)">
+      <animateMotion dur="3.2s" repeatCount="indefinite" path="M0 0L-91-52L63-72L0 0"/>
+    </circle>
+    <circle r="3.5" fill="#00E5FF" filter="url(#glow)">
+      <animateMotion dur="4.1s" repeatCount="indefinite" path="M0 0L45 98L96 22L0 0"/>
+    </circle>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#6E7681">
+    <text x="820" y="338">SIGNAL  99.9%</text>
+    <rect x="934" y="329" width="174" height="9" rx="4.5" fill="#21262D"/>
+    <rect x="934" y="329" width="160" height="9" rx="4.5" fill="url(#neon)">
+      <animate attributeName="width" values="42;160;116;160" dur="4s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
