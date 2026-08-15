@@ -117,16 +117,22 @@
 ## GitHub telemetry
 
 <div align="center">
-  <img width="98%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=XUanhoa04&theme=github_dark" alt="GitHub contribution profile details" />
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=XUanhoa04&theme=github_dark" alt="Xuân Hòa's GitHub statistics" />
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=XUanhoa04&theme=github_dark" alt="Most-used languages by commits" />
+  <p><sub><code>COMMIT SIGNALS</code>&nbsp; · &nbsp;<code>LANGUAGE MIX</code>&nbsp; · &nbsp;<code>CONTRIBUTION FLOW</code></sub></p>
+
+  <img width="42%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=XUanhoa04&theme=github_dark" alt="Xuân Hòa's GitHub statistics" />
+  &nbsp;
+  <img width="42%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=XUanhoa04&theme=github_dark" alt="Most-used languages by commits" />
 
   <br /><br />
+
+  <sub><code>LIVE CONTRIBUTION STREAM</code></sub>
+
+  <br />
 
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/XUanhoa04/XUanhoa04/output/github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/XUanhoa04/XUanhoa04/output/github-contribution-grid-snake.svg" />
-    <img width="96%" alt="Contribution graph animated as a snake" src="https://raw.githubusercontent.com/XUanhoa04/XUanhoa04/output/github-contribution-grid-snake.svg" />
+    <img width="84%" alt="Contribution graph animated as a snake" src="https://raw.githubusercontent.com/XUanhoa04/XUanhoa04/output/github-contribution-grid-snake.svg" />
   </picture>
 </div>
 
