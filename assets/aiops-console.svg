@@ -1,90 +1,251 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
-  <title id="title">Cái Xuân Hòa — AI Engineer</title>
-  <desc id="desc">A compact animated AI operations console with moving signals and softly pulsing nodes.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="console-title console-desc">
+  <title id="console-title">Cái Xuân Hòa — AI Engineer Console</title>
+  <desc id="console-desc">Modern animated AIOps &amp; AI Engineering telemetry console with rotating orbital nodes and live signal indicators.</desc>
 
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#070B14"/>
-      <stop offset="0.58" stop-color="#0D1117"/>
-      <stop offset="1" stop-color="#120B25"/>
+    <!-- Background Gradients -->
+    <linearGradient id="console-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050814"/>
+      <stop offset="45%" stop-color="#0A1024"/>
+      <stop offset="85%" stop-color="#100B26"/>
+      <stop offset="100%" stop-color="#060917"/>
     </linearGradient>
-    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#00D9FF"/>
-      <stop offset="0.55" stop-color="#7C3AED"/>
-      <stop offset="1" stop-color="#FF4D8D"/>
+
+    <linearGradient id="neon-cyan-violet" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D9FF"/>
+      <stop offset="45%" stop-color="#7C3AED"/>
+      <stop offset="80%" stop-color="#FF4D8D"/>
+      <stop offset="100%" stop-color="#3FB950"/>
     </linearGradient>
-    <radialGradient id="core">
-      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.95"/>
-      <stop offset="0.24" stop-color="#00D9FF" stop-opacity="0.80"/>
-      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+
+    <linearGradient id="badge-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D9FF"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+
+    <radialGradient id="singularity-core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="25%" stop-color="#00D9FF" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#7C3AED" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
-      <path d="M34 0H0V34" fill="none" stroke="#7C3AED" stroke-opacity="0.08"/>
+
+    <!-- Grid Pattern -->
+    <pattern id="telemetry-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#7C3AED" stroke-opacity="0.08" stroke-width="1"/>
+      <circle cx="32" cy="32" r="0.75" fill="#00D9FF" fill-opacity="0.2"/>
     </pattern>
-    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
-      <feGaussianBlur stdDeviation="3.5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+
+    <!-- Glow Filters -->
+    <filter id="soft-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
-    <clipPath id="frame"><rect x="10" y="10" width="1180" height="240" rx="20"/></clipPath>
+
+    <filter id="core-glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="console-clip">
+      <rect x="10" y="10" width="1180" height="260" rx="20"/>
+    </clipPath>
+
+    <style>
+      @keyframes laser-sweep {
+        0% { transform: translateY(-50px); opacity: 0; }
+        50% { opacity: 0.6; }
+        100% { transform: translateY(310px); opacity: 0; }
+      }
+      @keyframes orbit-rotate-cw {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes orbit-rotate-ccw {
+        from { transform: rotate(360deg); }
+        to { transform: rotate(0deg); }
+      }
+      @keyframes node-pulse {
+        0%, 100% { transform: scale(0.95); opacity: 0.85; }
+        50% { transform: scale(1.08); opacity: 1; filter: drop-shadow(0 0 10px #00D9FF); }
+      }
+      @keyframes status-blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.25; }
+      }
+      @keyframes stream-dash {
+        to { stroke-dashoffset: -120; }
+      }
+      @keyframes wave-freq {
+        0%, 100% { height: 4px; y: 16px; }
+        50% { height: 18px; y: 2px; }
+      }
+      .anim-laser { animation: laser-sweep 6.5s linear infinite; }
+      .anim-rot-cw-slow { transform-origin: 985px 140px; animation: orbit-rotate-cw 34s linear infinite; }
+      .anim-rot-ccw-mid { transform-origin: 985px 140px; animation: orbit-rotate-ccw 22s linear infinite; }
+      .anim-rot-cw-fast { transform-origin: 985px 140px; animation: orbit-rotate-cw 15s linear infinite; }
+      .anim-core-pulse { transform-origin: 985px 140px; animation: node-pulse 3.2s ease-in-out infinite; }
+      .anim-status { animation: status-blink 1.8s ease-in-out infinite; }
+      .anim-stream { animation: stream-dash 5s linear infinite; }
+      .w-1 { animation: wave-freq 1.1s ease-in-out infinite 0.1s; }
+      .w-2 { animation: wave-freq 0.8s ease-in-out infinite 0.3s; }
+      .w-3 { animation: wave-freq 1.3s ease-in-out infinite 0.2s; }
+      .w-4 { animation: wave-freq 0.9s ease-in-out infinite 0.5s; }
+      .w-5 { animation: wave-freq 1.2s ease-in-out infinite 0.4s; }
+    </style>
   </defs>
 
-  <rect width="1200" height="260" rx="22" fill="url(#bg)"/>
-  <rect x="10" y="10" width="1180" height="240" rx="20" fill="url(#grid)" stroke="url(#neon)" stroke-width="1.2" stroke-opacity="0.58"/>
+  <!-- Base Card -->
+  <rect width="1200" height="280" rx="22" fill="url(#console-bg)"/>
 
-  <g clip-path="url(#frame)">
-    <rect x="0" y="-45" width="1200" height="42" fill="url(#neon)" opacity="0.045">
-      <animate attributeName="y" values="-45;270" dur="6s" repeatCount="indefinite"/>
-    </rect>
-    <path d="M0 218C180 180 315 242 500 207S850 173 1200 219" fill="none" stroke="#00D9FF" stroke-opacity="0.13" stroke-width="1.5" stroke-dasharray="7 12">
-      <animate attributeName="stroke-dashoffset" values="0;-190" dur="9s" repeatCount="indefinite"/>
-    </path>
+  <!-- Telemetry Grid -->
+  <rect x="10" y="10" width="1180" height="260" rx="20" fill="url(#telemetry-grid)"/>
+
+  <!-- Neon Outer Border -->
+  <rect x="10" y="10" width="1180" height="260" rx="20" fill="none" stroke="url(#neon-cyan-violet)" stroke-width="1.4" stroke-opacity="0.65" filter="url(#soft-glow)"/>
+
+  <!-- Scanning Laser & Dynamic Wave Horizon -->
+  <g clip-path="url(#console-clip)">
+    <g class="anim-laser">
+      <rect x="0" y="0" width="1200" height="30" fill="url(#neon-cyan-violet)" opacity="0.04"/>
+      <line x1="0" y1="30" x2="1200" y2="30" stroke="#00D9FF" stroke-width="1.2" stroke-opacity="0.25"/>
+    </g>
+    
+    <!-- Flowing Wave Vectors -->
+    <path d="M 0 235 C 200 195, 380 260, 600 225 S 920 190, 1200 236" fill="none" stroke="#00D9FF" stroke-opacity="0.14" stroke-width="1.5" stroke-dasharray="6 10" class="anim-stream"/>
+    <path d="M 0 248 C 240 215, 460 270, 720 238 S 1020 210, 1200 250" fill="none" stroke="#7C3AED" stroke-opacity="0.12" stroke-width="1.2" stroke-dasharray="4 8" class="anim-stream"/>
   </g>
 
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-    <circle cx="60" cy="49" r="5" fill="#3FB950">
-      <animate attributeName="opacity" values="1;0.35;1" dur="2.2s" repeatCount="indefinite"/>
-    </circle>
-    <text x="76" y="55" fill="#8B949E" font-size="14" letter-spacing="2">CÁI XUÂN HÒA</text>
-
-    <text x="58" y="132" fill="#F0F6FC" font-size="58" font-weight="750" letter-spacing="-2">AI ENGINEER</text>
-    <text x="61" y="177" fill="url(#neon)" font-size="18" font-weight="600" letter-spacing="2">LEARNING  AIOPS · CLOUD · LLMOPS</text>
-    <text x="61" y="215" fill="#6E7681" font-size="13">curious mind / practical systems / one step at a time</text>
-    <rect x="504" y="203" width="8" height="14" rx="1" fill="#FF4D8D">
-      <animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/>
-    </rect>
-  </g>
-
-  <g transform="translate(985 130)">
-    <circle r="91" fill="none" stroke="#7C3AED" stroke-opacity="0.14" stroke-dasharray="4 11">
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="38s" repeatCount="indefinite"/>
-    </circle>
-    <circle r="65" fill="none" stroke="#00D9FF" stroke-opacity="0.20" stroke-dasharray="3 9">
-      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="24s" repeatCount="indefinite"/>
-    </circle>
-
-    <g fill="none" stroke="url(#neon)" stroke-width="1.6" stroke-opacity="0.58" stroke-dasharray="5 7">
-      <path d="M0 0L-71-39L-50 59L36 73L74 17L48-55Z">
-        <animate attributeName="stroke-dashoffset" values="0;-72" dur="5s" repeatCount="indefinite"/>
-      </path>
-      <path d="M-71-39L48-55M-50 59L74 17M36 73L0 0" opacity="0.5"/>
+  <!-- ==================== LEFT HUD: IDENTITY & NARRATIVE ==================== -->
+  <g font-family="ui-monospace, 'JetBrains Mono', SFMono-Regular, Menlo, Consolas, monospace">
+    
+    <!-- Status Line Pill -->
+    <g transform="translate(56, 42)">
+      <rect width="375" height="26" rx="13" fill="#0A1124" stroke="#00D9FF" stroke-opacity="0.3" stroke-width="1"/>
+      <circle cx="14" cy="13" r="4.5" fill="#3FB950" filter="url(#soft-glow)" class="anim-status"/>
+      <text x="28" y="17" fill="#3FB950" font-size="11" font-weight="700" letter-spacing="1.5">ONLINE</text>
+      <text x="78" y="17" fill="#4B5563" font-size="11">|</text>
+      <text x="90" y="17" fill="#8B949E" font-size="11" letter-spacing="1">CÁI XUÂN HÒA</text>
+      <text x="185" y="17" fill="#4B5563" font-size="11">|</text>
+      <text x="198" y="17" fill="#00D9FF" font-size="11" font-weight="600" letter-spacing="1">AIOPS TELEMETRY</text>
     </g>
 
-    <circle r="35" fill="url(#core)" filter="url(#glow)">
-      <animate attributeName="r" values="31;37;31" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    <circle r="17" fill="#0D1117" stroke="#00D9FF" stroke-width="1.5"/>
-    <path d="M-7 1L-2 6L8-7" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-
-    <g filter="url(#glow)">
-      <circle cx="-71" cy="-39" r="6" fill="#00D9FF"><animate attributeName="r" values="5;8;5" dur="3.1s" repeatCount="indefinite"/></circle>
-      <circle cx="-50" cy="59" r="6" fill="#7C3AED"><animate attributeName="r" values="6;9;6" dur="3.6s" repeatCount="indefinite"/></circle>
-      <circle cx="36" cy="73" r="6" fill="#FF4D8D"><animate attributeName="opacity" values="1;0.35;1" dur="2.5s" repeatCount="indefinite"/></circle>
-      <circle cx="74" cy="17" r="6" fill="#00D9FF"><animate attributeName="opacity" values="0.35;1;0.35" dur="1.9s" repeatCount="indefinite"/></circle>
-      <circle cx="48" cy="-55" r="6" fill="#FF4D8D"><animate attributeName="r" values="5;8;5" dur="2.8s" repeatCount="indefinite"/></circle>
+    <!-- Main Title: AI ENGINEER -->
+    <g transform="translate(54, 118)">
+      <text x="0" y="0" fill="#F0F6FC" font-size="54" font-weight="800" letter-spacing="-1.5">AI ENGINEER</text>
     </g>
 
-    <circle r="3.5" fill="#FFFFFF" filter="url(#glow)">
-      <animateMotion dur="3.8s" repeatCount="indefinite" path="M0 0L-71-39L48-55L0 0"/>
-    </circle>
+    <!-- Subtitle: Specialization & Learning Goals -->
+    <g transform="translate(56, 156)">
+      <text x="0" y="0" fill="url(#neon-cyan-violet)" font-size="16.5" font-weight="700" letter-spacing="2.2" filter="url(#soft-glow)">
+        LEARNING AIOPS · CLOUD · LLMOPS &amp; MLOPS
+      </text>
+    </g>
+
+    <!-- Core Philosophy / Motto -->
+    <g transform="translate(56, 190)" font-size="13" fill="#8B949E">
+      <text x="0" y="0">
+        <tspan fill="#00D9FF">&gt;</tspan> curious mind / practical systems / one step at a time
+      </text>
+      <!-- Blinking Terminal Block Cursor -->
+      <rect x="390" y="-12" width="7.5" height="15" rx="1.5" fill="#FF4D8D" class="anim-status"/>
+    </g>
+
+    <!-- Bottom Telemetry Badges & Signal Audio visualizer -->
+    <g transform="translate(56, 226)">
+      
+      <!-- Mini Audio Oscilloscope -->
+      <g transform="translate(0, 0)" fill="#00D9FF" opacity="0.8">
+        <rect x="0" y="8" width="3" height="12" rx="1" class="w-1"/>
+        <rect x="6" y="4" width="3" height="16" rx="1" class="w-2"/>
+        <rect x="12" y="2" width="3" height="18" rx="1" class="w-3"/>
+        <rect x="18" y="6" width="3" height="14" rx="1" class="w-4"/>
+        <rect x="24" y="3" width="3" height="17" rx="1" class="w-5"/>
+        <rect x="30" y="7" width="3" height="13" rx="1" class="w-2"/>
+        <rect x="36" y="2" width="3" height="18" rx="1" class="w-1"/>
+      </g>
+
+      <!-- Badge 1: AWS Accelerator Intern Alumni -->
+      <g transform="translate(54, 0)">
+        <rect width="210" height="22" rx="5" fill="#0D162B" stroke="#7C3AED" stroke-opacity="0.4" stroke-width="1"/>
+        <text x="10" y="15" fill="#C084FC" font-size="10.5" font-weight="600" letter-spacing="1">AWS ACCELERATOR ALUMNI</text>
+      </g>
+
+      <!-- Badge 2: Location -->
+      <g transform="translate(274, 0)">
+        <rect width="135" height="22" rx="5" fill="#09181B" stroke="#00D9FF" stroke-opacity="0.4" stroke-width="1"/>
+        <text x="10" y="15" fill="#38BDF8" font-size="10.5" font-weight="600" letter-spacing="1">VIETNAM · UTC+7</text>
+      </g>
+    </g>
+
   </g>
+
+  <!-- ==================== RIGHT HUD: TELEMETRY RADAR & AIOPS CORE ==================== -->
+  <g transform="translate(985, 140)">
+    
+    <!-- Outer Holographic Compass Ring -->
+    <circle r="96" fill="none" stroke="#7C3AED" stroke-opacity="0.16" stroke-width="1.2" stroke-dasharray="3 9"/>
+    <circle r="80" fill="none" stroke="#00D9FF" stroke-opacity="0.22" stroke-width="1.4" stroke-dasharray="5 11" class="anim-rot-cw-slow"/>
+    <circle r="62" fill="none" stroke="#FF4D8D" stroke-opacity="0.25" stroke-width="1.2" stroke-dasharray="8 16" class="anim-rot-ccw-mid"/>
+
+    <!-- Orbital Telemetry Ellipses -->
+    <g class="anim-rot-cw-slow">
+      <ellipse rx="74" ry="26" fill="none" stroke="url(#badge-glow)" stroke-width="1.6" stroke-dasharray="6 8" stroke-opacity="0.75" filter="url(#soft-glow)"/>
+      <circle cx="74" cy="0" r="3.5" fill="#00D9FF" filter="url(#core-glow)"/>
+      <circle cx="-74" cy="0" r="3" fill="#3FB950"/>
+    </g>
+
+    <g class="anim-rot-ccw-mid">
+      <ellipse rx="66" ry="24" transform="rotate(60)" fill="none" stroke="url(#neon-cyan-violet)" stroke-width="1.4" stroke-dasharray="4 6" stroke-opacity="0.7"/>
+      <circle cx="0" cy="24" r="3.5" fill="#FF4D8D" filter="url(#core-glow)"/>
+    </g>
+
+    <!-- Central Hexagonal AIOps Core Frame -->
+    <polygon points="0,-36 31,-18 31,18 0,36 -31,18 -31,-18" fill="#090E20" fill-opacity="0.8" stroke="#7C3AED" stroke-width="1.2" stroke-opacity="0.6"/>
+
+    <!-- Pulsing Singularity Core -->
+    <circle r="26" fill="url(#singularity-core)" class="anim-core-pulse" filter="url(#core-glow)"/>
+    <circle r="14" fill="#050814" stroke="#00D9FF" stroke-width="1.6"/>
+    
+    <!-- Center Checkmark / AIOps Signal icon -->
+    <path d="M -5 0 L -1 4 L 6 -5" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Surrounding Tech Telemetry Node Labels -->
+    <g font-family="ui-monospace, SFMono-Regular, monospace" font-size="9" font-weight="700" filter="url(#soft-glow)">
+      
+      <!-- Bedrock Node -->
+      <g transform="translate(-76, -52)">
+        <rect width="52" height="17" rx="3.5" fill="#0C152B" stroke="#00D9FF" stroke-opacity="0.6"/>
+        <text x="5" y="12" fill="#00D9FF">BEDROCK</text>
+      </g>
+
+      <!-- OTEL Node -->
+      <g transform="translate(38, -62)">
+        <rect width="40" height="17" rx="3.5" fill="#150E28" stroke="#A855F7" stroke-opacity="0.6"/>
+        <text x="5" y="12" fill="#C084FC">OTEL</text>
+      </g>
+
+      <!-- K8s Node -->
+      <g transform="translate(48, 46)">
+        <rect width="36" height="17" rx="3.5" fill="#1C0E22" stroke="#FF4D8D" stroke-opacity="0.6"/>
+        <text x="6" y="12" fill="#FF4D8D">K8S</text>
+      </g>
+
+      <!-- PyTorch Node -->
+      <g transform="translate(-82, 42)">
+        <rect width="50" height="17" rx="3.5" fill="#071918" stroke="#3FB950" stroke-opacity="0.6"/>
+        <text x="5" y="12" fill="#3FB950">PYTORCH</text>
+      </g>
+    </g>
+
+  </g>
+
 </svg>
