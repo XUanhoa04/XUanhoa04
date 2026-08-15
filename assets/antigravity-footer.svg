@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="140" viewBox="0 0 1200 140" role="img" aria-labelledby="footer-title footer-desc">
+  <title id="footer-title">Antigravity Footer Banner</title>
+  <desc id="footer-desc">Futuristic glowing antigravity footer bar with pulsating core and quote.</desc>
+
+  <defs>
+    <linearGradient id="footer-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#04060E"/>
+      <stop offset="50%" stop-color="#0A0E22"/>
+      <stop offset="100%" stop-color="#04060E"/>
+    </linearGradient>
+
+    <linearGradient id="footer-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#00F0FF" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#7C3AED" stop-opacity="1"/>
+      <stop offset="75%" stop-color="#FF007F" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FF007F" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="footer-text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="50%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#FF007F"/>
+    </linearGradient>
+
+    <radialGradient id="footer-core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="30%" stop-color="#00F0FF" stop-opacity="0.8"/>
+      <stop offset="70%" stop-color="#7C3AED" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="glow-footer" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes float-pulse {
+        0%, 100% { transform: scale(1); opacity: 0.8; }
+        50% { transform: scale(1.15); opacity: 1; }
+      }
+      @keyframes sweep-line {
+        0% { stroke-dashoffset: 200; }
+        100% { stroke-dashoffset: -200; }
+      }
+      .anim-core-pulse { transform-origin: 600px 32px; animation: float-pulse 3s ease-in-out infinite; }
+      .anim-sweep { animation: sweep-line 6s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="140" rx="16" fill="url(#footer-bg)"/>
+  <rect width="1200" height="140" rx="16" fill="none" stroke="#1E293B" stroke-width="1"/>
+
+  <!-- Top Accent Glowing Horizon Line -->
+  <line x1="50" y1="2" x2="1150" y2="2" stroke="url(#footer-line)" stroke-width="2.5" filter="url(#glow-footer)"/>
+
+  <!-- Central Pulsing Antigravity Singularity -->
+  <g class="anim-core-pulse">
+    <circle cx="600" cy="32" r="22" fill="url(#footer-core)" filter="url(#glow-footer)"/>
+    <circle cx="600" cy="32" r="8" fill="#04060E" stroke="#00F0FF" stroke-width="1.5"/>
+    <circle cx="600" cy="32" r="3" fill="#00FFA3"/>
+  </g>
+
+  <!-- Side Energy Laser Beams -->
+  <path d="M 100 32 L 540 32" stroke="url(#footer-line)" stroke-width="1.2" stroke-dasharray="8 12" class="anim-sweep"/>
+  <path d="M 660 32 L 1100 32" stroke="url(#footer-line)" stroke-width="1.2" stroke-dasharray="8 12" class="anim-sweep"/>
+
+  <!-- Central Quote & Subtitle -->
+  <g text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+    <text x="600" y="82" fill="url(#footer-text-grad)" font-size="16" font-weight="700" letter-spacing="1.2" filter="url(#glow-footer)">
+      “ Defying gravity through code • Crafting the future of human-AI interfaces ”
+    </text>
+
+    <text x="600" y="112" fill="#64748B" font-family="'JetBrains Mono', Consolas, monospace" font-size="12" letter-spacing="1.5">
+      ENGINEERED WITH <tspan fill="#FF007F">♥</tspan> BY <tspan fill="#00F0FF" font-weight="600">CÁI XUÂN HÒA</tspan> · ANTIGRAVITY ENGINE 2.0
+    </text>
+  </g>
+
+</svg>
