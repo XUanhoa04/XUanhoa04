@@ -48,27 +48,26 @@
   </tr>
 </table>
 
-## Selected systems
-
-<div align="center">
-  <a href="https://github.com/XUanhoa04/aiops-engineering-handbook">
-    <img width="49%" src="./assets/cards/aiops-handbook.svg" alt="AIOps Engineering Handbook repository" />
-  </a>
-  <a href="https://github.com/XUanhoa04/aiops-demo-bedrock">
-    <img width="49%" src="./assets/cards/aiops-demo.svg" alt="Explainable AIOps demo on Amazon Bedrock" />
-  </a>
-  <a href="https://github.com/XUanhoa04/async-trace-doctor">
-    <img width="49%" src="./assets/cards/async-trace-doctor.svg" alt="Async Trace Doctor repository" />
-  </a>
-  <a href="https://github.com/XUanhoa04/geekbrain-langgraph">
-    <img width="49%" src="./assets/cards/geekbrain-langgraph.svg" alt="Governed multi-source RAG agent repository" />
-  </a>
-</div>
-
 <details>
-  <summary><strong>More engineering tools</strong></summary>
+  <summary><strong>Repository index</strong> — open to explore selected work</summary>
   <br />
   <table>
+    <tr>
+      <td><a href="https://github.com/XUanhoa04/aiops-engineering-handbook"><strong>aiops-engineering-handbook</strong></a></td>
+      <td>Architecture, algorithms, and production lessons for building AIOps platforms.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/XUanhoa04/aiops-demo-bedrock"><strong>aiops-demo-bedrock</strong></a></td>
+      <td>Explainable anomaly detection, topology-aware RCA, and risk-gated remediation.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/XUanhoa04/async-trace-doctor"><strong>async-trace-doctor</strong></a></td>
+      <td>OpenTelemetry auditor for async traces, retries, fan-out, and topology drift.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/XUanhoa04/geekbrain-langgraph"><strong>geekbrain-langgraph</strong></a></td>
+      <td>Governed multi-source RAG with LangGraph, Bedrock, and S3 Vectors.</td>
+    </tr>
     <tr>
       <td><a href="https://github.com/XUanhoa04/readme-fit"><strong>readme-fit</strong></a></td>
       <td>Repository-aware README quality auditor grounded in evidence.</td>
