@@ -1,93 +1,138 @@
 <div align="center">
+  <img src="./assets/aiops-hero.png" width="100%" alt="Abstract AI operations network with a luminous orchestration core" />
 
-  <!-- ==================== HEADER BANNER ==================== -->
-  <img src="./assets/aiops-console.svg" width="100%" alt="Cái Xuân Hòa — AI Engineer learning AIOps, Cloud and LLMOps" />
+  <h1>Cái Xuân Hòa</h1>
 
-  <br/>
+  <p><strong>AI Engineer · AIOps · LLM Systems · Cloud Reliability</strong></p>
+  <p><em>I turn noisy signals into explainable decisions and safe, observable automation.</em></p>
 
-  <!-- ==================== HUD QUICK BADGES ==================== -->
+  <p>
+    <code>OBSERVE</code>&nbsp; → &nbsp;<code>REASON</code>&nbsp; → &nbsp;<code>ACT</code>&nbsp; → &nbsp;<code>EVALUATE</code>
+  </p>
+
   <a href="https://www.linkedin.com/in/c%C3%A1i-xu%C3%A2n-h%C3%B2a-04655931a/">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-Let's_connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn" />
   </a>
   <a href="mailto:xuanhoa2004tt@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Say%20hello-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
+    <img src="https://img.shields.io/badge/Email-Say_hello-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Send an email" />
   </a>
-  <a href="https://github.com/XUanhoa04">
-    <img src="https://img.shields.io/badge/Focus-AIOps%20%7C%20Cloud%20%7C%20LLMOps-7C3AED?style=flat-square&logo=target&logoColor=white" alt="Focus" />
-  </a>
-  <img src="https://komarev.com/ghpvc/?username=XUanhoa04&label=Profile+views&color=00D9FF&style=flat-square" alt="Profile views" />
-
+  <img src="https://img.shields.io/badge/Vietnam-UTC%2B7-7C3AED?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Based in Vietnam, UTC+7" />
 </div>
 
-## About me
+<br />
 
-Hi, I'm **Cái Xuân Hòa**, an Intern **AI Engineer** from Vietnam.
-
-I previously interned at **XBrain** through the **AWS Accelerator Internship Program**, where I gained hands-on experience with AI and cloud technologies. I am currently learning more about **AIOps, Cloud, and LLMOps**, with an interest in building useful, reliable systems one step at a time.
-
-## Tech stack
+## Building intelligence that can operate
 
 <table>
   <tr>
-    <td width="30%"><b>AI & Data</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
-      <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" />
-      <img src="https://img.shields.io/badge/Amazon_Bedrock-FF9900?style=flat-square&logo=amazonaws&logoColor=white" />
-      <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
-      <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
-      <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" />
+    <td width="60%" valign="top">
+      <h3>From models to dependable systems</h3>
+      <p>
+        I build evidence-driven AI systems where <strong>machine learning</strong>,
+        <strong>observability</strong>, and <strong>cloud operations</strong> meet.
+        My current work explores explainable anomaly detection, topology-aware root-cause
+        analysis, governed RAG, and risk-gated remediation on AWS.
+      </p>
+      <p>
+        Previously, I joined <strong>XBrain</strong> as an AI Engineer Intern through the
+        <strong>AWS Accelerator Internship Program</strong>, gaining hands-on experience
+        with applied AI and cloud technologies.
+      </p>
     </td>
-  </tr>
-  <tr>
-    <td><b>Cloud & Platform</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" />
-      <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
-      <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" />
-      <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" />
-      <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" />
-    </td>
-  </tr>
-  <tr>
-    <td><b>Observability</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/OpenTelemetry-425CC7?style=flat-square&logo=opentelemetry&logoColor=white" />
-      <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" />
-      <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" />
-    </td>
-  </tr>
-  <tr>
-    <td><b>Languages</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-      <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white" />
+    <td width="40%" valign="top">
+      <h3>Current signal</h3>
+      <p>🔭 <strong>Building</strong><br />AIOps and agentic reliability tooling</p>
+      <p>🧠 <strong>Exploring</strong><br />LLMOps, evaluation, and safe automation</p>
+      <p>🌱 <strong>Learning in public</strong><br />One tested system at a time</p>
     </td>
   </tr>
 </table>
 
-## GitHub activity
+## Selected systems
 
 <div align="center">
+  <a href="https://github.com/XUanhoa04/aiops-engineering-handbook">
+    <img width="49%" src="./assets/cards/aiops-handbook.svg" alt="AIOps Engineering Handbook repository" />
+  </a>
+  <a href="https://github.com/XUanhoa04/aiops-demo-bedrock">
+    <img width="49%" src="./assets/cards/aiops-demo.svg" alt="Explainable AIOps demo on Amazon Bedrock" />
+  </a>
+  <a href="https://github.com/XUanhoa04/async-trace-doctor">
+    <img width="49%" src="./assets/cards/async-trace-doctor.svg" alt="Async Trace Doctor repository" />
+  </a>
+  <a href="https://github.com/XUanhoa04/geekbrain-langgraph">
+    <img width="49%" src="./assets/cards/geekbrain-langgraph.svg" alt="Governed multi-source RAG agent repository" />
+  </a>
+</div>
 
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=XUanhoa04&theme=github_dark&animation=load&duration=2" alt="Xuân Hòa's GitHub statistics" />
-  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=XUanhoa04&theme=github_dark&animation=load&duration=2" alt="Most-used languages by commits" />
+<details>
+  <summary><strong>More engineering tools</strong></summary>
+  <br />
+  <table>
+    <tr>
+      <td><a href="https://github.com/XUanhoa04/readme-fit"><strong>readme-fit</strong></a></td>
+      <td>Repository-aware README quality auditor grounded in evidence.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/XUanhoa04/repo-prune"><strong>repo-prune</strong></a></td>
+      <td>Evidence-first repository cleanup with branch-aware findings.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/XUanhoa04/safeops-vision"><strong>safeops-vision</strong></a></td>
+      <td>Evidence-backed PPE incidents and safety workflows from cameras.</td>
+    </tr>
+  </table>
+</details>
 
-  <br/>
+## Engineering lens
 
-  <img width="58%" src="https://streak-stats.demolab.com?user=XUanhoa04&theme=github-dark-blue&hide_border=true&ring=58A6FF&fire=F0883E&currStreakLabel=58A6FF" alt="GitHub streak and total contributions" />
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3>◉ Observe</h3>
+      <p>Metrics, logs, traces, topology, and data quality as first-class signals.</p>
+    </td>
+    <td width="33%" valign="top">
+      <h3>◇ Reason</h3>
+      <p>Hybrid ML, retrieval, and LLM-assisted diagnosis with explicit evidence.</p>
+    </td>
+    <td width="34%" valign="top">
+      <h3>△ Act safely</h3>
+      <p>Confidence thresholds, risk gates, human approval, rollback, and evaluation.</p>
+    </td>
+  </tr>
+</table>
 
-  <br/>
+## Toolbox
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=python,go,typescript,pytorch,fastapi,postgres,redis,aws,docker,kubernetes,grafana,prometheus,githubactions,linux&perline=14" alt="Python, Go, TypeScript, PyTorch, FastAPI, PostgreSQL, Redis, AWS, Docker, Kubernetes, Grafana, Prometheus, GitHub Actions, and Linux" />
+  <br /><br />
+  <img src="https://img.shields.io/badge/Amazon_Bedrock-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white" alt="Amazon Bedrock" />
+  <img src="https://img.shields.io/badge/LangGraph-1C1C1C?style=flat-square&logo=langchain&logoColor=white" alt="LangGraph" />
+  <img src="https://img.shields.io/badge/OpenTelemetry-425CC7?style=flat-square&logo=opentelemetry&logoColor=white" alt="OpenTelemetry" />
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn" />
+</div>
+
+## GitHub telemetry
+
+<div align="center">
+  <img width="98%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=XUanhoa04&theme=github_dark" alt="GitHub contribution profile details" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=XUanhoa04&theme=github_dark" alt="Xuân Hòa's GitHub statistics" />
+  <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=XUanhoa04&theme=github_dark" alt="Most-used languages by commits" />
+
+  <br /><br />
 
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/XUanhoa04/XUanhoa04/output/github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/XUanhoa04/XUanhoa04/output/github-contribution-grid-snake.svg" />
-    <img width="96%" alt="Contribution snake" src="https://raw.githubusercontent.com/XUanhoa04/XUanhoa04/output/github-contribution-grid-snake.svg" />
+    <img width="96%" alt="Contribution graph animated as a snake" src="https://raw.githubusercontent.com/XUanhoa04/XUanhoa04/output/github-contribution-grid-snake.svg" />
   </picture>
-
 </div>
 
+<br />
+
 <div align="center">
-  <sub>Thanks for stopping by.</sub>
+  <p><em>Reliable AI starts with observable systems.</em></p>
+  <img src="https://komarev.com/ghpvc/?username=XUanhoa04&label=PROFILE+VIEWS&color=7C3AED&style=flat-square" alt="Profile views" />
 </div>
