@@ -4,11 +4,6 @@
   <h1>Cái Xuân Hòa</h1>
 
   <p><strong>AI Engineer · AIOps · LLM Systems · Cloud Reliability</strong></p>
-  <p><em>I turn noisy signals into explainable decisions and safe, observable automation.</em></p>
-
-  <p>
-    <code>OBSERVE</code>&nbsp; → &nbsp;<code>REASON</code>&nbsp; → &nbsp;<code>ACT</code>&nbsp; → &nbsp;<code>EVALUATE</code>
-  </p>
 
   <a href="https://www.linkedin.com/in/c%C3%A1i-xu%C3%A2n-h%C3%B2a-04655931a/">
     <img src="https://img.shields.io/badge/LinkedIn-Let's_connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect on LinkedIn" />
