@@ -78,25 +78,6 @@
   </table>
 </details>
 
-## Engineering lens
-
-<table>
-  <tr>
-    <td width="33%" valign="top">
-      <h3>◉ Observe</h3>
-      <p>Metrics, logs, traces, topology, and data quality as first-class signals.</p>
-    </td>
-    <td width="33%" valign="top">
-      <h3>◇ Reason</h3>
-      <p>Hybrid ML, retrieval, and LLM-assisted diagnosis with explicit evidence.</p>
-    </td>
-    <td width="34%" valign="top">
-      <h3>△ Act safely</h3>
-      <p>Confidence thresholds, risk gates, human approval, rollback, and evaluation.</p>
-    </td>
-  </tr>
-</table>
-
 ## Toolbox
 
 <div align="center">
