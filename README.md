@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/aiops-hero.png" width="100%" alt="Abstract AI operations network with a luminous orchestration core" />
+  <img src="./assets/cyber-character.svg" width="100%" alt="Cyber Space Explorer & Orbit Drone Animation" />
 
   <h1>Cái Xuân Hòa</h1>
 
@@ -12,10 +12,6 @@
     <img src="https://img.shields.io/badge/Email-Say_hello-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Send an email" />
   </a>
   <img src="https://img.shields.io/badge/Vietnam-UTC%2B7-7C3AED?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Based in Vietnam, UTC+7" />
-
-  <br /><br />
-
-  <img src="./assets/cyber-character.svg" width="100%" alt="Cyber Space Explorer & Orbit Drone Animation" />
 </div>
 
 <br />
