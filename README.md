@@ -92,11 +92,15 @@
 ## GitHub telemetry
 
 <div align="center">
-  <p><sub><code>COMMIT SIGNALS</code>&nbsp; · &nbsp;<code>LANGUAGE MIX</code>&nbsp; · &nbsp;<code>CONTRIBUTION FLOW</code></sub></p>
+  <p><sub><code>COMMIT SIGNALS</code>&nbsp; · &nbsp;<code>STREAK METRICS</code>&nbsp; · &nbsp;<code>LANGUAGE MIX</code>&nbsp; · &nbsp;<code>CONTRIBUTION FLOW</code></sub></p>
 
   <img width="42%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=XUanhoa04&theme=github_dark" alt="Xuân Hòa's GitHub statistics" />
   &nbsp;
   <img width="42%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=XUanhoa04&theme=github_dark" alt="Most-used languages by commits" />
+
+  <br /><br />
+
+  <img width="84%" src="https://streak-stats.demolab.com?user=XUanhoa04&theme=github-dark" alt="Xuân Hòa's GitHub Streak" />
 
   <br /><br />
 
