@@ -1,0 +1,422 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" stop-opacity="0.95" />
+      <stop offset="50%" stop-color="#0d1117" stop-opacity="0.98" />
+      <stop offset="100%" stop-color="#070a10" stop-opacity="0.95" />
+    </linearGradient>
+
+    <linearGradient id="neon-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+
+    <linearGradient id="neon-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <linearGradient id="visor-glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#818cf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="suit-body" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="60%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#64748b" />
+    </linearGradient>
+
+    <linearGradient id="suit-shadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+
+    <linearGradient id="thruster-fire" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="25%" stop-color="#38bdf8" />
+      <stop offset="70%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
+    </linearGradient>
+
+    <radialGradient id="nebula-purple" cx="25%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#4c1d95" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#0b0f19" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="nebula-cyan" cx="75%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.2" />
+      <stop offset="60%" stop-color="#0284c7" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#0b0f19" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Glow filters -->
+    <filter id="glow-cyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-purple" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    /* Floating character */
+    @keyframes floatMaster {
+      0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+      }
+      25% {
+        transform: translateY(-9px) rotate(1.2deg);
+      }
+      50% {
+        transform: translateY(-16px) rotate(-0.5deg);
+      }
+      75% {
+        transform: translateY(-6px) rotate(-1.5deg);
+      }
+    }
+
+    /* Floating drone companion */
+    @keyframes droneFloat {
+      0%, 100% {
+        transform: translate(0px, 0px) rotate(0deg);
+      }
+      35% {
+        transform: translate(8px, -14px) rotate(4deg);
+      }
+      70% {
+        transform: translate(-6px, -7px) rotate(-3deg);
+      }
+    }
+
+    /* Thruster flickering */
+    @keyframes thrusterFlame {
+      0%, 100% {
+        transform: scaleY(1) scaleX(1);
+        opacity: 0.9;
+      }
+      50% {
+        transform: scaleY(1.35) scaleX(0.9);
+        opacity: 1;
+      }
+      75% {
+        transform: scaleY(0.85) scaleX(1.08);
+        opacity: 0.75;
+      }
+    }
+
+    /* Laser scanline in visor */
+    @keyframes visorScan {
+      0% {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      20% {
+        opacity: 0.8;
+      }
+      80% {
+        opacity: 0.8;
+      }
+      100% {
+        transform: translateY(35px);
+        opacity: 0;
+      }
+    }
+
+    /* Stars pulse */
+    @keyframes starTwinkle {
+      0%, 100% { opacity: 0.3; transform: scale(0.8); }
+      50% { opacity: 1; transform: scale(1.2); }
+    }
+
+    /* Rotating HUD circles */
+    @keyframes rotateClockwise {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes rotateCounter {
+      from { transform: rotate(360deg); }
+      to { transform: rotate(0deg); }
+    }
+
+    /* Neon orbit particle */
+    @keyframes orbitPulse {
+      0% { offset-distance: 0%; opacity: 0.2; }
+      50% { opacity: 1; }
+      100% { offset-distance: 100%; opacity: 0.2; }
+    }
+
+    /* Waveform oscillation */
+    @keyframes wavePulse {
+      0%, 100% { transform: scaleY(0.4); }
+      50% { transform: scaleY(1.1); }
+    }
+
+    .float-astronaut {
+      animation: floatMaster 5.5s ease-in-out infinite;
+      transform-origin: 450px 160px;
+    }
+
+    .float-drone {
+      animation: droneFloat 4s ease-in-out infinite;
+      transform-origin: 660px 110px;
+    }
+
+    .flame-anim {
+      animation: thrusterFlame 0.3s ease-in-out infinite alternate;
+      transform-origin: top center;
+    }
+
+    .visor-beam {
+      animation: visorScan 3s ease-in-out infinite;
+    }
+
+    .twinkle-1 { animation: starTwinkle 2.5s ease-in-out infinite; }
+    .twinkle-2 { animation: starTwinkle 3.8s ease-in-out infinite 1s; }
+    .twinkle-3 { animation: starTwinkle 1.9s ease-in-out infinite 0.5s; }
+
+    .hud-ring-1 {
+      animation: rotateClockwise 20s linear infinite;
+      transform-origin: 180px 160px;
+    }
+    .hud-ring-2 {
+      animation: rotateCounter 14s linear infinite;
+      transform-origin: 180px 160px;
+    }
+    .hud-ring-3 {
+      animation: rotateClockwise 26s linear infinite;
+      transform-origin: 750px 160px;
+    }
+
+    .sound-bar {
+      transform-origin: bottom;
+      animation: wavePulse 1.2s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Frame Background -->
+  <rect width="900" height="320" rx="16" fill="url(#bg-grad)" stroke="#232b3e" stroke-width="1.5" />
+
+  <!-- Ambient Nebulas -->
+  <rect width="900" height="320" rx="16" fill="url(#nebula-purple)" />
+  <rect width="900" height="320" rx="16" fill="url(#nebula-cyan)" />
+
+  <!-- Grid Perspective Lines (Subtle Cyber Floor) -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.4">
+    <line x1="0" y1="280" x2="900" y2="280" />
+    <line x1="0" y1="300" x2="900" y2="300" />
+    <line x1="0" y1="315" x2="900" y2="315" />
+    <line x1="100" y1="280" x2="0" y2="320" />
+    <line x1="250" y1="280" x2="180" y2="320" />
+    <line x1="400" y1="280" x2="380" y2="320" />
+    <line x1="500" y1="280" x2="520" y2="320" />
+    <line x1="650" y1="280" x2="720" y2="320" />
+    <line x1="800" y1="280" x2="900" y2="320" />
+  </g>
+
+  <!-- Deep Space Stars / Constellation Dots -->
+  <g fill="#ffffff">
+    <circle cx="95" cy="55" r="1.5" class="twinkle-1" />
+    <circle cx="160" cy="90" r="1" class="twinkle-2" />
+    <circle cx="280" cy="40" r="1.8" class="twinkle-3" />
+    <circle cx="340" cy="85" r="1.2" class="twinkle-1" />
+    <circle cx="580" cy="45" r="1.5" class="twinkle-2" />
+    <circle cx="640" cy="95" r="1" class="twinkle-3" />
+    <circle cx="780" cy="60" r="2" class="twinkle-1" />
+    <circle cx="840" cy="110" r="1.2" class="twinkle-2" />
+    <circle cx="80" cy="220" r="1.2" class="twinkle-3" />
+    <circle cx="210" cy="240" r="1.5" class="twinkle-1" />
+    <circle cx="730" cy="250" r="1" class="twinkle-2" />
+    <circle cx="820" cy="220" r="1.8" class="twinkle-3" />
+    <!-- Cross star -->
+    <path d="M780,55 L780,65 M775,60 L785,60" stroke="#38bdf8" stroke-width="0.8" opacity="0.8" class="twinkle-1" />
+    <path d="M95,50 L95,60 M90,55 L100,55" stroke="#c084fc" stroke-width="0.8" opacity="0.8" class="twinkle-3" />
+  </g>
+
+  <!-- Left Side: Holographic Planet / Orbital Tech Rings -->
+  <g opacity="0.65">
+    <circle cx="180" cy="160" r="55" fill="none" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="8 6" class="hud-ring-1" filter="url(#glow-purple)" />
+    <circle cx="180" cy="160" r="42" fill="none" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="14 4 2 4" class="hud-ring-2" />
+    <circle cx="180" cy="160" r="28" fill="#1e1b4b" stroke="#a855f7" stroke-width="1" />
+    <!-- Saturn Ring -->
+    <ellipse cx="180" cy="160" rx="46" ry="12" fill="none" stroke="#c084fc" stroke-width="2" transform="rotate(-25 180 160)" />
+    <!-- Tech coordinates/metrics -->
+    <text x="180" y="240" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8" text-anchor="middle" letter-spacing="2">SECTOR // 04-X</text>
+    <text x="180" y="254" font-family="'JetBrains Mono', monospace" font-size="8" fill="#38bdf8" text-anchor="middle" opacity="0.8">SYS.STATUS: ONLINE</text>
+  </g>
+
+  <!-- Right Side: Cyber Waveform / Radar Ring -->
+  <g opacity="0.65">
+    <circle cx="750" cy="160" r="58" fill="none" stroke="#06b6d4" stroke-width="1.2" stroke-dasharray="6 8" class="hud-ring-3" filter="url(#glow-cyan)" />
+    <circle cx="750" cy="160" r="44" fill="none" stroke="#6366f1" stroke-width="1" stroke-dasharray="12 6" />
+    <circle cx="750" cy="160" r="3" fill="#22d3ee" filter="url(#glow-cyan)" />
+    
+    <!-- Audio/Signal Spectrum Bars -->
+    <g transform="translate(718, 175)">
+      <rect x="0" y="-12" width="3.5" height="12" rx="1.5" fill="#38bdf8" class="sound-bar" style="animation-duration: 0.9s; animation-delay: 0.1s" />
+      <rect x="7" y="-22" width="3.5" height="22" rx="1.5" fill="#818cf8" class="sound-bar" style="animation-duration: 1.4s; animation-delay: 0.3s" />
+      <rect x="14" y="-32" width="3.5" height="32" rx="1.5" fill="#c084fc" class="sound-bar" style="animation-duration: 0.8s; animation-delay: 0s" />
+      <rect x="21" y="-18" width="3.5" height="18" rx="1.5" fill="#a855f7" class="sound-bar" style="animation-duration: 1.1s; animation-delay: 0.4s" />
+      <rect x="28" y="-38" width="3.5" height="38" rx="1.5" fill="#ec4899" class="sound-bar" style="animation-duration: 1.5s; animation-delay: 0.2s" />
+      <rect x="35" y="-26" width="3.5" height="26" rx="1.5" fill="#c084fc" class="sound-bar" style="animation-duration: 1.0s; animation-delay: 0.5s" />
+      <rect x="42" y="-30" width="3.5" height="30" rx="1.5" fill="#818cf8" class="sound-bar" style="animation-duration: 1.3s; animation-delay: 0.15s" />
+      <rect x="49" y="-16" width="3.5" height="16" rx="1.5" fill="#38bdf8" class="sound-bar" style="animation-duration: 0.7s; animation-delay: 0.35s" />
+      <rect x="56" y="-10" width="3.5" height="10" rx="1.5" fill="#22d3ee" class="sound-bar" style="animation-duration: 1.2s; animation-delay: 0.25s" />
+    </g>
+    <text x="750" y="240" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8" text-anchor="middle" letter-spacing="2">SYNTH PULSE</text>
+    <text x="750" y="254" font-family="'JetBrains Mono', monospace" font-size="8" fill="#a855f7" text-anchor="middle" opacity="0.8">FREQ: 144.8 MHz</text>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- CENTER CHARACTER: FLOATING CYBER ASTRONAUT & JET COMPANION -->
+  <!-- ======================================================== -->
+  <g class="float-astronaut">
+    
+    <!-- Jetpack Glow & Flame -->
+    <g transform="translate(425, 205)">
+      <!-- Left Thruster Flame -->
+      <g transform="translate(-18, 0)">
+        <ellipse cx="0" cy="18" rx="8" ry="24" fill="url(#thruster-fire)" class="flame-anim" filter="url(#glow-cyan)" />
+        <ellipse cx="0" cy="12" rx="4" ry="14" fill="#ffffff" class="flame-anim" />
+      </g>
+      <!-- Right Thruster Flame -->
+      <g transform="translate(68, 0)">
+        <ellipse cx="0" cy="18" rx="8" ry="24" fill="url(#thruster-fire)" class="flame-anim" filter="url(#glow-cyan)" style="animation-delay: 0.15s" />
+        <ellipse cx="0" cy="12" rx="4" ry="14" fill="#ffffff" class="flame-anim" style="animation-delay: 0.15s" />
+      </g>
+    </g>
+
+    <!-- Jetpack Hardware -->
+    <rect x="396" y="125" width="22" height="65" rx="8" fill="url(#suit-shadow)" stroke="#0ea5e9" stroke-width="1.5" />
+    <rect x="482" y="125" width="22" height="65" rx="8" fill="url(#suit-shadow)" stroke="#0ea5e9" stroke-width="1.5" />
+    <line x1="418" y1="145" x2="482" y2="145" stroke="#38bdf8" stroke-width="3" />
+    <circle cx="407" cy="185" r="3" fill="#38bdf8" filter="url(#glow-cyan)" />
+    <circle cx="493" cy="185" r="3" fill="#38bdf8" filter="url(#glow-cyan)" />
+
+    <!-- Oxygen / Energy Tube -->
+    <path d="M400,135 C370,140 365,190 415,195" fill="none" stroke="#c084fc" stroke-width="3" stroke-linecap="round" opacity="0.9" />
+
+    <!-- Character Legs -->
+    <!-- Left Leg -->
+    <g transform="translate(415, 185) rotate(12)">
+      <rect x="0" y="0" width="26" height="42" rx="10" fill="url(#suit-body)" />
+      <rect x="2" y="32" width="22" height="32" rx="8" fill="url(#suit-shadow)" />
+      <!-- Boot -->
+      <path d="M-4,58 L24,58 C28,58 30,62 30,66 L-6,66 C-6,62 -6,58 -4,58 Z" fill="#0f172a" stroke="#7c3aed" stroke-width="1.5" />
+      <circle cx="13" cy="20" r="4" fill="#7c3aed" />
+    </g>
+
+    <!-- Right Leg (Bent slightly) -->
+    <g transform="translate(460, 185) rotate(-16)">
+      <rect x="0" y="0" width="26" height="40" rx="10" fill="url(#suit-body)" />
+      <rect x="2" y="30" width="22" height="30" rx="8" fill="url(#suit-shadow)" />
+      <!-- Boot -->
+      <path d="M-2,54 L26,54 C30,54 32,58 32,62 L-4,62 C-4,58 -4,54 -2,54 Z" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
+      <circle cx="13" cy="20" r="4" fill="#38bdf8" />
+    </g>
+
+    <!-- Character Body / Torso -->
+    <rect x="410" y="115" width="80" height="85" rx="22" fill="url(#suit-body)" stroke="#475569" stroke-width="1" />
+    
+    <!-- Chest Armor Plate / Cyber Console -->
+    <rect x="424" y="130" width="52" height="48" rx="10" fill="#0f172a" stroke="#6366f1" stroke-width="1.5" />
+    <!-- Chest Status Lights -->
+    <circle cx="436" cy="142" r="3.5" fill="#22d3ee" filter="url(#glow-cyan)" />
+    <circle cx="448" cy="142" r="3" fill="#a855f7" filter="url(#glow-purple)" />
+    <circle cx="460" cy="142" r="3" fill="#10b981" />
+    <!-- Chest Mini Graph Lines -->
+    <line x1="432" y1="156" x2="468" y2="156" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 2" />
+    <line x1="432" y1="164" x2="462" y2="164" stroke="#c084fc" stroke-width="2" stroke-dasharray="6 3" />
+    <line x1="432" y1="170" x2="455" y2="170" stroke="#94a3b8" stroke-width="1.5" />
+
+    <!-- Left Arm & Glove (Holding floating Cyber HUD) -->
+    <g transform="translate(378, 120) rotate(22)">
+      <rect x="0" y="0" width="24" height="45" rx="10" fill="url(#suit-body)" />
+      <circle cx="12" cy="45" r="11" fill="url(#suit-shadow)" stroke="#c084fc" stroke-width="1.5" />
+      <!-- Finger glow -->
+      <circle cx="12" cy="45" r="3" fill="#c084fc" filter="url(#glow-purple)" />
+    </g>
+
+    <!-- Right Arm (Wave / Peace pose) -->
+    <g transform="translate(492, 120) rotate(-35)">
+      <rect x="0" y="0" width="24" height="45" rx="10" fill="url(#suit-body)" />
+      <!-- Glove -->
+      <circle cx="12" cy="45" r="11" fill="url(#suit-shadow)" stroke="#38bdf8" stroke-width="1.5" />
+      <!-- Holographic Sparkle above hand -->
+      <circle cx="12" cy="56" r="3" fill="#38bdf8" filter="url(#glow-cyan)" />
+    </g>
+
+    <!-- Helmet / Head Base -->
+    <circle cx="450" cy="85" r="46" fill="url(#suit-body)" stroke="#64748b" stroke-width="1.5" />
+    <!-- Helmet Ear Antennas / Tech Pods -->
+    <rect x="398" y="70" width="8" height="28" rx="4" fill="#0f172a" stroke="#38bdf8" stroke-width="1" />
+    <rect x="494" y="70" width="8" height="28" rx="4" fill="#0f172a" stroke="#7c3aed" stroke-width="1" />
+    <line x1="502" y1="74" x2="512" y2="60" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" />
+    <circle cx="512" cy="60" r="2.5" fill="#a855f7" filter="url(#glow-purple)" />
+
+    <!-- Visor (Big Glossy Cyber Glass) -->
+    <g>
+      <clipPath id="visor-clip">
+        <rect x="412" y="55" width="76" height="56" rx="22" />
+      </clipPath>
+      
+      <rect x="412" y="55" width="76" height="56" rx="22" fill="url(#visor-glass)" stroke="#ffffff" stroke-width="1.5" />
+
+      <!-- Visor Reflections & Laser Scanner -->
+      <g clip-path="url(#visor-clip)">
+        <!-- Visor high gloss top curve -->
+        <ellipse cx="450" cy="52" rx="32" ry="12" fill="#ffffff" opacity="0.45" />
+        <!-- Visor side glow -->
+        <circle cx="420" cy="75" r="18" fill="#ffffff" opacity="0.2" />
+        <!-- Laser scan line animation -->
+        <line x1="400" y1="70" x2="500" y2="70" stroke="#ffffff" stroke-width="3" opacity="0.8" class="visor-beam" filter="url(#glow-cyan)" />
+        <circle cx="460" cy="72" r="4" fill="#22d3ee" class="visor-beam" />
+      </g>
+    </g>
+
+    <!-- Floating Mini Hologram in front of hand -->
+    <g transform="translate(360, 160)">
+      <polygon points="12,0 24,7 24,21 12,28 0,21 0,7" fill="none" stroke="#22d3ee" stroke-width="1.2" filter="url(#glow-cyan)" />
+      <circle cx="12" cy="14" r="3" fill="#a855f7" filter="url(#glow-purple)" />
+      <line x1="4" y1="14" x2="20" y2="14" stroke="#ffffff" stroke-width="0.8" />
+    </g>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- COMPANION: FLOATING CYBER ORBIT DRONE BOT                -->
+  <!-- ======================================================== -->
+  <g class="float-drone">
+    <!-- Drone Body Sphere -->
+    <circle cx="660" cy="110" r="22" fill="#0f172a" stroke="#38bdf8" stroke-width="2" filter="url(#glow-cyan)" />
+    <!-- Drone Glowing Eye Core -->
+    <circle cx="660" cy="110" r="11" fill="url(#neon-purple)" />
+    <circle cx="660" cy="110" r="6" fill="#ffffff" class="twinkle-1" />
+    <!-- Drone Floating Wing Fins -->
+    <path d="M634,104 L622,96 C620,95 620,105 622,108 L634,114 Z" fill="#38bdf8" opacity="0.9" />
+    <path d="M686,104 L698,96 C700,95 700,105 698,108 L686,114 Z" fill="#38bdf8" opacity="0.9" />
+    <!-- Drone Antenna -->
+    <line x1="660" y1="88" x2="660" y2="78" stroke="#a855f7" stroke-width="2" stroke-linecap="round" />
+    <circle cx="660" cy="76" r="2.5" fill="#c084fc" filter="url(#glow-purple)" />
+    <!-- Drone Thruster glow -->
+    <ellipse cx="660" cy="134" rx="4" ry="8" fill="url(#thruster-fire)" class="flame-anim" />
+  </g>
+
+  <!-- Top-level Badass Accent Banner Bars -->
+  <rect x="30" y="24" width="80" height="3" rx="1.5" fill="url(#neon-purple)" />
+  <rect x="116" y="24" width="12" height="3" rx="1.5" fill="#38bdf8" />
+  <rect x="790" y="24" width="80" height="3" rx="1.5" fill="url(#neon-cyan)" />
+  <rect x="772" y="24" width="12" height="3" rx="1.5" fill="#c084fc" />
+
+</svg>
